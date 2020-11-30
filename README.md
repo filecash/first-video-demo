@@ -19,7 +19,24 @@ background process: python3 ffmpeg
     * □ ipfs node 搭建
     * □ ipfs public gateway 搭建
     * □ lotus filecash full node 搭建
-
+2. 钱包
+    * □ webui 实现网页钱包管理
+    * □ webui 实现用户网页隔离
+    * □ helper 实现网页钱包管理
+    * □ helper 实现用户网页隔离
+3. filecash取出的文件缓存到ipfs中
+    * □ 实现订单取回
+    * □ 实现ipfs pin 服务
+    * □ 实现ipfs 缓存回收
+4. 查询免费网络 ipfs
+    * □ 优先查询免费网络 ipfs
+    * □ 管理 ipfs pin
+5. 用户上传视频
+    * □ 上传UI
+    * □ 后端上传接口
+    * □ 转码及获取视频检索数据
+    * □ 管理员核审已经页面展示
+    * □ 视频分割
 
 ## 4.部署方式
 
@@ -29,3 +46,8 @@ background process: python3 ffmpeg
 磁盘需求: 100G用于存取缓存  
 网络需求: 连接internet用于部署时下载依赖
 
+使用root部署(使用传统VM+service部署)
+~~~bash
+git clone https://github.com/filecash/first-video-demo.git
+bash install.sh
+~~~
