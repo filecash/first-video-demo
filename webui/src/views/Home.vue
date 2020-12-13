@@ -25,6 +25,14 @@
         </b-form-group>
       </b-col>
     </b-row>
+    <b-row>
+      <b-col>
+        <div style="width:100%">
+        <video id="player" :poster="cover" controls autoplay class="video-js vjs-big-play-centered">
+        </video>
+        </div>
+      </b-col>
+    </b-row>
   </div>
 </template>
 <script>
@@ -68,5 +76,9 @@
 <style>
 #home{
   padding-top: 15px;
+}
+#player{
+  width: 100%;
+  height: 60vh;
 }
 </style>
