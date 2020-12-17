@@ -30,3 +30,10 @@ ipfs config --json Experimental.FilestoreEnabled true
 
 systemctl enable ipfs.service
 systemctl start ipfs.service
+
+#install gateway nginx proxy
+mkdir /usr/local/openresty/nginx/conf/lua/
+cp ipfsgateway/*.lua /usr/local/openresty/nginx/conf/lua/
+#cp ipfsgateway/ipfsgw.conf /usr/local/openresty/nginx/conf/lua/
+sed -i '$i\'$(cat ipfsgateway/ipfsgw.conf) /usr/local/openresty/nginx/conf/nginx.conf
+systemctl restart openresty.service
