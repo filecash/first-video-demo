@@ -11,4 +11,4 @@ tar -zcvf ../webui.tar.gz ./*
 cd ..
 
 #install web ui
-tar -zxvf webui.tar.gz -C /var/www/html/
+tar -zxvf webui.tar.gz -C /usr/local/openresty/nginx/html/
